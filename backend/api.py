@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from backend.agent import CreditCardAgent
+from agent import CreditCardAgent
 from recommendation import recommend_cards
 import sqlite3
 import json
