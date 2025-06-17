@@ -1,13 +1,11 @@
 from groq import Groq
+import os
 from typing import Dict, Optional
-from dotenv import dotenv_values
-
-env_vars = dotenv_values(".env")
-GroqAPIKey = env_vars.get("GroqAPIKey")
+import re
 
 class CreditCardAgent:
     def __init__(self):
-        self.client = Groq(api_key=GroqAPIKey)
+        self.client = Groq(api_key=os.getenv("GROQ_API_KEY"))
         self.sessions: Dict[str, Dict] = {}
         self.questions = [
             {"key": "income", "text": "What is your monthly income in INR?", "validation": self.validate_income},
