@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="Credit Card Advisor", layout="wide")
 
 # Use environment variable for backend URL
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:5000")
+BACKEND_URL = "creditcardrecommendation-production.up.railway.app"
 
 if "session_id" not in st.session_state:
     st.session_state.session_id = None
