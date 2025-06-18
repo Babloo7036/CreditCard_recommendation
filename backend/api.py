@@ -8,16 +8,13 @@ import os
 import logging
 import urllib.parse
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 
-# Initialize Groq agent
 agent = CreditCardAgent()
 
-# PostgreSQL database connection
 def get_db_connection():
     try:
         db_url = os.getenv("DATABASE_URL", "postgresql://user:password@localhost:5432/credit_cards")
@@ -36,7 +33,6 @@ def get_db_connection():
         logger.error(f"Database connection failed: {str(e)}")
         raise
 
-# Initialize database with sample data
 def init_db():
     try:
         conn = get_db_connection()

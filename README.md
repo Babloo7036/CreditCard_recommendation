@@ -25,7 +25,7 @@ streamlit run app.py
 
 
 Database:
-Data is loaded from data/cards.json (20 cards) into data/credit_cards.db on first run.
+Data is loaded from data/cards.json (25 cards) into data/credit_cards.db on first run.
 
 
 
