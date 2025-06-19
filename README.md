@@ -261,10 +261,10 @@ README: Setup and deployment instructions.
 
 11.2 Deployment Details
 
-Backend URL: [e.g., https://credit-card-backend.onrender.com]
-Frontend URL: [e.g., https://credit-card-frontend.onrender.com]
-GitHub Repository: [Link to repo]
-Demo Video: [Link to demo video/GIF]
+Backend URL: [https://creditcard-recommendation.onrender.com]
+Frontend URL: [https://creditcard-recommendation-frontend.onrender.com]
+GitHub Repository: [https://github.com/Babloo7036/CreditCard_recommendation]
+Demo Video: [https://drive.google.com/drive/folders/17Tugp3ufun31C-LQ8JM4d2anXANJTrC1?usp=sharing]
 
 11.3 Acknowledgments
 
@@ -273,4 +273,3 @@ Render: For hosting the application.
 Streamlit: For enabling rapid UI development.
 
 
-Prepared by: [Your Name]Date: June 18, 2025Contact: [Your Contact Info]
