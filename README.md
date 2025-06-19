@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-The Credit Card Recommendation System is a web-based application designed to assist users in selecting the most suitable credit cards from a dataset of 20 Indian credit cards. The system leverages a conversational agent powered by Groq's Llama3-70b-8192 model to collect user preferences (e.g., income, spending habits, preferred benefits) through a question-and-answer interface. It uses a recommendation engine to match user inputs with credit card attributes, displays results with card images via a Streamlit frontend, and stores card data in a SQLite database managed by a Flask backend. The project was developed within a 3-day timeline, focusing on functionality, user experience, and deployability on Render.
+The Credit Card Recommendation System is a web-based application designed to assist users in selecting the most suitable credit cards from a dataset of 20 Indian credit cards. The system leverages a conversational agent powered by Groq's Llama3-70b-8192 model to collect user preferences (e.g., income, spending habits, preferred benefits) through a question-and-answer interface. It uses a recommendation engine to match user inputs with credit card attributes, displays results with card images via a Streamlit frontend, and stores card data in a SQLite database managed by a Flask backend. This project focusing on functionality, user experience, and deployability on Render.
 
 **Frontend URL:** [https://creditcard-recommendation-frontend.onrender.com]
 
@@ -356,7 +356,7 @@ Dataset Expansion: Include more cards (50+) and update dynamically via web scrap
 
 ## 10. Conclusion
 
-The Credit Card Recommendation System meets all project requirements, delivering a functional, user-friendly, and deployable solution within the 3-day timeline. The integration of Groq’s conversational agent, a robust recommendation engine, and a visually appealing Streamlit UI with card images provides a seamless experience for users seeking Indian credit cards. Despite challenges like SQLite path issues and validation bugs, all were resolved efficiently, ensuring a polished product. The system is live on Render, ready for demonstration, and extensible for future enhancements.
+The Credit Card Recommendation System meets all project requirements, delivering a functional, user-friendly, and deployable. The integration of Groq’s conversational agent, a robust recommendation engine, and a visually appealing Streamlit UI with card images provides a seamless experience for users seeking Indian credit cards. Despite challenges like SQLite path issues and validation bugs, all were resolved efficiently, ensuring a polished product. The system is live on Render, ready for demonstration, and extensible for future enhancements.
 
 ## 11. Appendices
 
