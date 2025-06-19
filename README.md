@@ -8,62 +8,62 @@ The Credit Card Recommendation System is a web-based application designed to ass
 
 **Demo Video:** [https://drive.google.com/drive/folders/17Tugp3ufun31C-LQ8JM4d2anXANJTrC1?usp=sharing]
 
-**Flowchart** [https://github.com/Babloo7036/CreditCard_recommendation/blob/main/documentation%20of%20agent%20flow%20and%20prompt%20design/Flowchart.pdf]
+**Flowchart:** [https://github.com/Babloo7036/CreditCard_recommendation/blob/main/documentation%20of%20agent%20flow%20and%20prompt%20design/Flowchart.pdf]
 
 
 ## 2. Local Installation
 
-1. Clone the Repository:
+2.1 Clone the Repository:
    ```sh
    git clone https://github.com/Babloo7036/CreditCard_recommendation.git
    
    cd CreditCard_recommendation
    ```
-2.1 Navigate to the Backend Directory:
+2.2 Navigate to the Backend Directory:
    ```sh
    cd backend
    ```
-2.2 Create and Activate a Virtual Environment:
+2.3 Create and Activate a Virtual Environment:
    ```sh
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-2.3 Install Backend Dependencies:
+2.4 Install Backend Dependencies:
    ```sh
    pip install -r requirements.txt
    ```
-2.4 Create a .env File:
+2.5 Create a .env File:
    ```sh
    GROQ_API_KEY=your_actual_groq_api_key
    DB_PATH=data/credit_cards.db
    ```
-2.5 Run the Backend Server:
+2.6 Run the Backend Server:
    ```sh
    python app.py
    ```
-3.1 Open a New Terminal and Navigate to the Frontend Directory:
+2.7 Open a New Terminal and Navigate to the Frontend Directory:
    ```sh
    cd frontend
    ```
-3.2 Create and Activate a Virtual Environment:
+2.8 Create and Activate a Virtual Environment:
    ```sh
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-3.3 Install Frontend Dependencies:
+2.9 Install Frontend Dependencies:
    ```sh
    pip install -r requirements.txt
    ```
-3.4 Set Environment Variable:
+2.10 Set Environment Variable:
    ```sh
    export BACKEND_URL=http://127.0.0.1:5000  # Windows: set BACKEND_URL=http://127.0.0.1:5000
    ```
-3.5 Run the Frontend:
+2.11 Run the Frontend:
    ```sh
    streamlit run app.py
    ```
 
-## 2. Objectives
+## 3. Objectives
 
 ### Primary Goal:
 Develop a system to recommend Indian credit cards based on user inputs (income, spending on fuel/travel/groceries/dining, preferred benefits, existing cards, credit score).
@@ -76,7 +76,7 @@ Deploy the application on Render with persistent storage for the database.
 Ensure robust input validation and error handling.
 Integrate a dataset of 20 Indian credit cards with attributes like name, issuer, annual fee, reward type, reward rate, eligibility, perks, apply link, and image URL.
 
-## 3. Technologies Used
+## 4. Technologies Used
 
 ### Backend:
 
@@ -106,7 +106,7 @@ Render: Cloud platform for deployment with persistent disk support.
 
 GitHub: Version control and repository hosting.
 
-## 4. System Architecture
+## 5. System Architecture
 
 The system is divided into three main components:
 
@@ -152,9 +152,9 @@ Architecture Diagram (Conceptual):
     v                v
 [Groq Agent]    [Cards JSON]
 
-## 5. Implementation Details
+## 6. Implementation Details
 
-### 5.1 Project Structure
+### 6.1 Project Structure
 
 credit-card-advisor/
 
@@ -180,7 +180,7 @@ credit-card-advisor/
 
 └── README.md              # Documentation
 
-### 5.2 Backend Implementation
+### 6.2 Backend Implementation
 
 #### Flask API (app.py):
 
@@ -209,7 +209,7 @@ Initialized with 20 cards from cards.json on startup.
 
 
 
-### 5.3 Frontend Implementation
+### 6.3 Frontend Implementation
 
 #### Streamlit UI (app.py):
 
@@ -218,7 +218,7 @@ Shows recommendations in expandable sections with card images (via img_url), ann
 Includes a comparison table and restart functionality.
 Communicates with the Flask backend using environment-configurable URLs.
 
-### 5.4 Dataset Integration
+### 6.4 Dataset Integration
 
 #### Dataset:
 
@@ -237,7 +237,7 @@ Diverse reward types (cashback, points, miles, neucoins, discount, custom, fuel 
 
 
 
-### 5.5 Deployment
+### 6.5 Deployment
 
 Platform: Render, chosen for its support for Python apps and persistent storage.
 
@@ -262,7 +262,7 @@ Tested live URLs for functionality.
 
 
 
-## 6. Challenges and Solutions
+## 7. Challenges and Solutions
 
 ### SQLite Path Issues:
 
@@ -295,7 +295,7 @@ Solution: Used a persistent disk for SQLite and configured BACKEND_URL in the fr
 
 
 
-## 7. Testing
+## 8. Testing
 
 ### Unit Testing:
 
@@ -328,7 +328,7 @@ Verified Render deployment for both services, checking database persistence and 
 
 
 
-## 8. Results
+## 9. Results
 
 Functionality: The system successfully collects user preferences, validates inputs, and recommends the top 5 credit cards with detailed reasons and reward simulations.
 User Experience: The Streamlit UI is intuitive, with a clean chat interface, expandable recommendation cards with images, and a comparison table.
@@ -336,7 +336,7 @@ Performance: Local runs are fast (sub-second API responses), and Render deployme
 Dataset: All 20 cards are integrated, with accurate reward calculations for diverse types.
 Deployment: Live on Render with persistent SQLite storage and secure Groq API key management.
 
-## 9. Future Enhancements
+## 10. Future Enhancements
 
 WhatsApp Integration: Add a WhatsApp bot using Twilio for conversational access
 
@@ -355,13 +355,13 @@ Support dark mode and responsive design for mobile.
 
 Dataset Expansion: Include more cards (50+) and update dynamically via web scraping or APIs.
 
-## 10. Conclusion
+## 11. Conclusion
 
 The Credit Card Recommendation System meets all project requirements, delivering a functional, user-friendly, and deployable. The integration of Groq’s conversational agent, a robust recommendation engine, and a visually appealing Streamlit UI with card images provides a seamless experience for users seeking Indian credit cards. Despite challenges like SQLite path issues and validation bugs, all were resolved efficiently, ensuring a polished product. The system is live on Render, ready for demonstration, and extensible for future enhancements.
 
-## 11. Appendices
+## 12. Appendices
 
-### 11.1 Key Artifacts
+### 12.1 Key Artifacts
 
 Backend (app.py): Flask API with SQLite integration.
 Agent (agent.py): Groq-powered conversational logic.
@@ -370,7 +370,7 @@ Frontend (app.py): Streamlit UI with image display.
 Dataset (cards.json): 20 Indian credit cards.
 README: Setup and deployment instructions.
 
-### 11.2 Deployment Details
+### 12.2 Deployment Details
 
 **Backend URL:** [https://creditcard-recommendation.onrender.com]
 
@@ -380,7 +380,7 @@ README: Setup and deployment instructions.
 
 **Demo Video:** [https://drive.google.com/drive/folders/17Tugp3ufun31C-LQ8JM4d2anXANJTrC1?usp=sharing]
 
-### 11.3 Acknowledgments
+### 12.3 Acknowledgments
 
 Groq: For providing the Llama3-70b-8192 model API.
 Render: For hosting the application.
