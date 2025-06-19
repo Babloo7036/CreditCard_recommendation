@@ -8,6 +8,7 @@ The Credit Card Recommendation System is a web-based application designed to ass
 
 **Demo Video:** [https://drive.google.com/drive/folders/17Tugp3ufun31C-LQ8JM4d2anXANJTrC1?usp=sharing]
 
+**Flowchart** [https://github.com/Babloo7036/CreditCard_recommendation/blob/main/documentation%20of%20agent%20flow%20and%20prompt%20design/Flowchart.pdf]
 
 
 ## 2. Local Installation
