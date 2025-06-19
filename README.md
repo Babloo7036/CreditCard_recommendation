@@ -4,6 +4,64 @@
 
 The Credit Card Recommendation System is a web-based application designed to assist users in selecting the most suitable credit cards from a dataset of 20 Indian credit cards. The system leverages a conversational agent powered by Groq's Llama3-70b-8192 model to collect user preferences (e.g., income, spending habits, preferred benefits) through a question-and-answer interface. It uses a recommendation engine to match user inputs with credit card attributes, displays results with card images via a Streamlit frontend, and stores card data in a SQLite database managed by a Flask backend. The project was developed within a 3-day timeline, focusing on functionality, user experience, and deployability on Render.
 
+**Frontend URL:** [https://creditcard-recommendation-frontend.onrender.com]
+
+**Demo Video:** [https://drive.google.com/drive/folders/17Tugp3ufun31C-LQ8JM4d2anXANJTrC1?usp=sharing]
+
+
+
+## 2. Local Installation
+
+1. Clone the Repository:
+   ```sh
+   git clone https://github.com/Babloo7036/CreditCard_recommendation.git
+   
+   cd CreditCard_recommendation
+   ```
+2.1 Navigate to the Backend Directory:
+   ```sh
+   cd backend
+   ```
+2.2 Create and Activate a Virtual Environment:
+   ```sh
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+2.3 Install Backend Dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+2.4 Create a .env File:
+   ```sh
+   GROQ_API_KEY=your_actual_groq_api_key
+   DB_PATH=data/credit_cards.db
+   ```
+2.5 Run the Backend Server:
+   ```sh
+   python app.py
+   ```
+3.1 Open a New Terminal and Navigate to the Frontend Directory:
+   ```sh
+   cd frontend
+   ```
+3.2 Create and Activate a Virtual Environment:
+   ```sh
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3.3 Install Frontend Dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+3.4 Set Environment Variable:
+   ```sh
+   export BACKEND_URL=http://127.0.0.1:5000  # Windows: set BACKEND_URL=http://127.0.0.1:5000
+   ```
+3.5 Run the Frontend:
+   ```sh
+   streamlit run app.py
+   ```
+
 ## 2. Objectives
 
 ### Primary Goal:
