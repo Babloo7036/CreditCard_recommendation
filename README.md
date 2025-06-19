@@ -1,4 +1,4 @@
-# Credit Card Recommendation System: Project Report
+# Credit Card Recommendation System:
 
 ## 1. Project Overview
 
